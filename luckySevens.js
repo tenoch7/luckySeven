@@ -45,8 +45,8 @@ function rollDice() {
 function displayResultTable(startingBet, totalRolls, highestAmount, highestAmountRoll){
     document.getElementById("resultTable").style.display = "block";
     document.getElementById("resultHeading").innerText = "Results";
-    document.getElementById("resultStartingBet").innerText = "Starting Bet " + startingBet;
-    document.getElementById("resultRollsBeforeBroke").innerText = "Total Rolls Before Broke " + totalRolls;
-    document.getElementById("resultHighestWon").innerText = "Highest Amount Won " + highestAmount;
-    document.getElementById("resultRollsHighestAmount").innerText = "Roll Count at Highest Amount Won " + highestAmountRoll;
+    document.getElementById("resultStartingBet").innerText = startingBet;
+    document.getElementById("resultRollsBeforeBroke").innerText = totalRolls;
+    document.getElementById("resultHighestWon").innerText = highestAmount;
+    document.getElementById("resultRollsHighestAmount").innerText = highestAmountRoll;
 }

@@ -11,35 +11,54 @@
     </head>
     <body>
         <div class="container">
-            <h1>Lucky Sevens</h1>
-            <form name="betting" onsubmit="return play()" class="form-inline">
+            <div class="row">
+                <div class="col-sm-6 offset-md-3">
+                    <h1>Lucky Sevens</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-md-3">
+                    <form name="betting" onsubmit="return play()" class="form-inline">
+                        <div class="form-group">
+                            <label for="startingMoney">Starting Bet: </label>
+                            <input type="number" class="form-control" id="startingBet" style="width:200px;">
+                        </div> 
                 
-                <div class="form-group">
-                    <label for="startingMoney">Starting Bet: </label>
-                    <input type="number" class="form-control" id="startingBet" style="width:200px;">
-                </div> 
-
-                <button type="submit" id="submitButton" class="btn btn-success">Play</button>
+                        <button type="submit" id="submitButton" class="btn btn-success">Play</button>
+                    </form>
+                </div>
+            </div>      
                 
-            </form>
-            
-            
-            
-            
-            <table id="resultTable" class="table table-striped" style="display:none;">
-                <thead>
-                    <th><h2 id="resultHeading"></th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span id="resultStartingBet"></span></td>
-                        <td><span id="resultRollsBeforeBroke"></span></td>
-                        <td><span id="resultHighestWon"></span></td>
-                        <td><span id="resultRollsHighestAmount"></span></td>
-                    </tr>
-                </tbody>
-            </table>
-
+                
+                
+                
+            <div class="row">
+                <div class="col-sm-6 offset-md-3">
+                    <table id="resultTable" class="table table-striped" style="display:none;">
+                        <thead>
+                            <th><h2 id="resultHeading"></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Starting Bet</td>
+                                <td><span id="resultStartingBet"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Total Rolls Before Broke</td>
+                                <td><span id="resultRollsBeforeBroke"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Highest Amount Won</td>
+                                <td><span id="resultHighestWon"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Roll Count at Highest Amount Won</td>
+                                <td><span id="resultRollsHighestAmount"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         
         
         </div>
