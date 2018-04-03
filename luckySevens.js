@@ -7,11 +7,12 @@ function play() {
     var totalRolls = 0;
     var highestAmountRoll = 0;
     while (bet > 0){
+        console.log(bet);
         var dice1 = rollDice();
         var dice2 = rollDice();
         totalRolls++;
         if ( dice1 + dice2 == 7){
-            bet = (bet + 4);
+            bet = addFour(bet);
             if (bet > highestAmount){
                 highestAmount = bet;
                 highestAmountRoll = totalRolls;
@@ -25,6 +26,9 @@ function play() {
     return false;
     
 } 
+function addFour(num){
+    return Number(num) + 4;
+}
 
 
 function validateItems() {
@@ -38,7 +42,7 @@ function validateItems() {
 }
 
 function rollDice() {
-    return Math.ceil(Math.random() * (1 + 6 - 1));
+    return Math.ceil(Math.random() * (6));
 }
 
 

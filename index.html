@@ -6,19 +6,22 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- JavaScript file-->
         <script src="luckySevens.js"></script>
-        
+        <!-- CSS file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
            
-        
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 offset-md-3">
                     <h1>Lucky Sevens</h1>
+                    <p>As long as there is money, the game will continue playing.<br/>
+                       Each round, the program rolls a virtual pair of dice for the user.<br/>
+                       If the sum of the 2 dice is equal to 7, the player wins $4 otherwise, the player loses $1.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 offset-md-3">
+                <div class="col-sm-6 offset-md-4">
                     <form name="betting" onsubmit="return play()" class="form-inline">
                         <div class="form-group">
                             <label for="startingMoney">Starting Bet: </label>
@@ -34,7 +37,7 @@
                 
                 
             <div class="row">
-                <div class="col-sm-6 offset-md-3">
+                <div class="col-sm-6 offset-md-4">
                     <table id="resultTable" class="table table-striped" style="display:none;">
                         <thead>
                             <th><h2 id="resultHeading"></th>
@@ -60,6 +63,9 @@
                     </table>
                 </div>
             </div>
+            
+                    <img src="dice.jpg" alt="Dices" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+                
         
         
         </div>
