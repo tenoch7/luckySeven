@@ -7,7 +7,7 @@ function play() {
     var totalRolls = 0;
     var highestAmountRoll = 0;
     while (bet > 0){
-        console.log(bet);
+        // console.log(bet);
         var dice1 = rollDice();
         var dice2 = rollDice();
         totalRolls++;
